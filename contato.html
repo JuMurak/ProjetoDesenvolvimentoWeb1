@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contato</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/cbb6d5c68b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="barra-topo justify-content">
+		<div class="msg">
+			<p>Olá, seja bem-vindo(a)!</p>
+		</div>
+	</div>	
+	<header class= "sticky-top">
+		<div class="topo shadow-sm" id="topo">
+			<div class="container">
+				<div class="row d-flex align-items-center justify-content-evenly">
+					<div class="col-1">
+						<a class="logo"	href="index.html">
+							<img src="imagens/logo2.png" alt="Logotipo">
+						</a>
+					</div>
+					<div class="col-11">
+						<nav class="navbar navbar-light d-sm-none d-flex align-items-center justify-content-evenly">
+							<div class="container-fluid">
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" >
+								<span class="navbar-toggler-icon"></span>
+								</button>
+							</div>
+						</nav>
+						<div class="d-none d-sm-block">
+							<nav class="nav d-flex align-items-center justify-content-evenly">
+								<a class="nav-link" href="index.html">HOME</a>
+								<a class="nav-link" href="sobre.html">SOBRE</a>
+								<a class="nav-link" href="pedras.html">PEDRAS</a>
+								<a class="nav-link" href="incensos.html">INCENSOS</a>
+								<a class="nav-link" href="baralhos.html">BARALHOS</a>
+								<a class="nav-link" href="contato.html">CONTATO</a>
+								<a class="btn btn-success rounded-pill" href="https://api.whatsapp.com/send?l=pt&phone=9999999999999" target="_blank" id="exceto"><i class="fab fa-whatsapp"></i></a>
+							</nav>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="collapse" id="menuMobile">
+						<nav class="nav flex-column d-flex align-items-center justify-content-evenly">
+							<a class="nav-link" href="index.html">HOME</a>
+							<a class="nav-link" href="sobre.html">SOBRE</a>
+							<a class="nav-link" href="pedras.html">PEDRAS</a>
+							<a class="nav-link" href="incensos.html">INCENSOS</a>
+							<a class="nav-link" href="baralhos.html">BARALHOS</a>
+							<a class="nav-link" href="contato.html">CONTATO</a>
+							<a class="btn btn-success rounded-pill" href="https://api.whatsapp.com/send?l=pt&phone=9999999999999" target="_blank" id="exceto"><i class="fab fa-whatsapp"></i></a>
+						</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<br>
+			<div class="row mt-3" id="texto-formulario">
+				<h1>Formulário de contato</h1>				
+				<br>				
+				<br>
+				<br>
+				<p>Aqui sua opinião é importante!</p>			
+				<p>Ficou com alguma dúvida? Preencha o formulário e entraremos em contato.</p>
+			</div>				
+			<div class="row justify-content-center mt-3">
+				<div class="col-6">
+					<form class="needs-validation" name="formulario-teste" method="post" action="">
+						<div class="row mt-3 ">
+							<label class="form-label col-4">Nome:</label>
+							<div class="col-8">
+								<input required class="form-control " type="text" name="nome" >							
+							</div>
+						</div>
+						<div class="row mt-3">
+							<label class="form-label col-4">Endereço de e-mail:</label>
+							<div class="col-8">
+								<input required class="form-control" type="email" name="email">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<label class="form-label col-4">Telefone (com DDD): </label>
+							<div class="col-8">
+								<input required class="form-control " type="text" name="nome" >				
+							</div>
+						</div>
+						<div class="row mt-3 ">
+							<label class="form-label col-4">Assunto:</label>
+							<div class="col-8">
+								<input required class="form-control " type="text" name="nome" >							
+							</div>
+						</div>
+						<div class="row mt-3">
+							<label for="exampleFormControlTextarea1">Descrição:</label>
+							<div class="col-12">
+								<textarea class="form-control" rows="3"></textarea>
+							</div>
+						</div>
+						<br>
+						<div class="row mt-3">
+							<label class="form-label col-4">Envie seu Arquivo (opcional):</label>
+							<div class="col-8">
+								<input class="form-control" type="file" name="file">
+							</div>
+						</div>
+						<br>					
+						<br>
+						<br>
+						<div class="btn-personalizado">	
+							<button class="btn btn-block" align-center onclick="validador()" type="submit" >Enviar</button>
+						</div>	
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>				
+						<br>
+					</form>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section class="localizacao" id="local">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 mt-3 mb-2">
+					<h3>Localização</h3>
+					<p>Av. Carlos Kuntz Busch, 800 - Parque Egisto Ragazzo, Limeira - SP, 13485-346</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14740.893889585217!2d-47.3859!3d-22.5333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c87e1938a5b14f%3A0xd05f52e7b2a94b3f!2sLimeira%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1695584460676!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+	</section>
+	<footer class="rodape" id="contato">
+		<div class="container">			
+			<div class="row">
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>INSTITUCIONAL</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">							
+							<a class="nav-link" href="compra-envio.html">Compra e envio</a>
+							<a class="nav-link" href="politica-troca.html">Política de troca e devolução</a>
+							<a class="nav-link" href="contato.html">Fale conosco</a>
+							<a class="nav-link" href="trabalhe-conosco.html">Trabalhe conosco</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>ATENDIMENTO</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<b>Funcionamento:</b>
+							<p>De segunda a sexta das 9h às 18h e sábado das 9h às 13h.</p>
+							<b>Endereço:</b>
+							<p>Av. Carlos Kuntz Busch, 800 - Parque Egisto Ragazzo, Limeira - SP, 13485-346</p>
+							<b>Telefone:</b>							
+							<p>(99) 99999-9999</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>REDES SOCIAIS</h4>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="https://github.com/JuMurak" target="_blank">Github</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.linkedin.com/in/juliana-murakami/" target="_blank">Linkedin</a>
+							</li>
+						</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>SELOS DE SEGURANÇA:</h4>
+					<ul class="nav flex-column">	
+						<li class="nav-item">
+							<img class="selo-seguranca" src="imagens/site-seguro.png" alt="teste">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="barra-topo justify-content">
+		<div class="msg">
+			<p>Copyright © 2023. Todos os direitos reservados. Site desenvolvido por Juliana Murakami</p>
+		</div>
+	</div>
+</body>
+</html>
