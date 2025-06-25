@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compra e Envio</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/cbb6d5c68b.js" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+
+	<script src="js/firebase-config.js"></script>
+</head>
+<body>
+	<div class="barra-topo justify-content">
+		<div class="msg">
+			<p>Olá, seja bem-vindo(a)!</p>
+		</div>
+	</div>	
+	<header class= "sticky-top">
+		<div class="topo shadow-sm" id="topo">
+			<div class="container">
+				<div class="row d-flex align-items-center justify-content-evenly">
+					<div class="col-1">
+						<a class="logo"	href="index.html">
+							<img src="imagens/logo2.png" alt="Logotipo">
+						</a>
+					</div>
+					<div class="col-11">
+						<nav class="navbar navbar-light d-sm-none d-flex align-items-center justify-content-evenly">
+							<div class="container-fluid">
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" >
+								<span class="navbar-toggler-icon"></span>
+								</button>
+							</div>
+						</nav>
+						<div class="d-none d-sm-block">
+							<nav class="nav d-flex align-items-center justify-content-evenly">
+								<a class="nav-link" href="index.html">HOME</a>
+								<a class="nav-link" href="sobre.html">SOBRE</a>
+								<a class="nav-link" href="pedras.html">PEDRAS</a>
+								<a class="nav-link" href="incensos.html">INCENSOS</a>
+								<a class="nav-link" href="baralhos.html">BARALHOS</a>
+								<a class="nav-link" href="contato.html">CONTATO</a>
+								<a class="btn btn-success rounded-pill" href="https://api.whatsapp.com/send?l=pt&phone=9999999999999" target="_blank" id="exceto"><i class="fab fa-whatsapp"></i></a>
+							</nav>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="collapse" id="menuMobile">
+							<nav class="nav flex-column d-flex align-items-center justify-content-evenly">
+								<a class="nav-link" href="index.html">HOME</a>
+								<a class="nav-link" href="sobre.html">SOBRE</a>
+								<a class="nav-link" href="pedras.html">PEDRAS</a>
+								<a class="nav-link" href="incensos.html">INCENSOS</a>
+								<a class="nav-link" href="baralhos.html">BARALHOS</a>
+								<a class="nav-link" href="contato.html">CONTATO</a>
+								<a class="btn btn-success rounded-pill" href="https://api.whatsapp.com/send?l=pt&phone=9999999999999" target="_blank" id="exceto"><i class="fab fa-whatsapp"></i></a>
+						</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<br>
+			<div class="row mt-3" id="texto-formulario">
+				<h1>COMPRA E ENVIO</h1>				
+				<br>
+				<br>
+				<br>
+				<br>
+				<h5>Compras</h5>
+				<p>Para realizar a compra, entre em contato com nossa equipe pelo WhatsApp e passe o Código de Referência (Ref.xxx) do produto.
+				<br>
+				E para todo o Brasil, FRETE GRÁTIS nas compras acima de R$300,00!
+				</p>
+				<br>
+				<br>
+				<br>
+				<h5>Envios</h5>
+				<br>
+				<p>Todos os produtos serão enviados de acordo com a forma escolhida pelo cliente, em até 2 dias úteis da confirmação do pagamento. O prazo para a entrega varia de acordo com a forma de envio escolhida e será informada no momento do seu checkout.</p>
+				<p>Você receberá um e-mail com o código da sua encomenda que poderá ser rastreada através do site dos correios assim que for postada.</p>			
+				<br>
+				<br>
+				<br>
+				<br>				
+			</div>			
+		</div>		
+	</section>	
+	<footer class="rodape" id="contato">
+		<div class="container">			
+			<div class="row">
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>INSTITUCIONAL</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">							
+							<a class="nav-link" href="compra-envio.html">Compra e envio</a>
+							<a class="nav-link" href="politica-troca.html">Política de troca e devolução</a>
+							<a class="nav-link" href="contato.html">Fale conosco</a>
+							<a class="nav-link" href="trabalhe-conosco.html">Trabalhe conosco</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>ATENDIMENTO</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<b>Funcionamento:</b>
+							<p>De segunda a sexta das 9h às 18h e sábado das 9h às 13h.</p>
+							<b>Endereço:</b>
+							<p>Av. Carlos Kuntz Busch, 800 - Parque Egisto Ragazzo, Limeira - SP, 13485-346</p>
+							<b>Telefone:</b>							
+							<p>(99) 99999-9999</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>REDES SOCIAIS</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/JuMurak" target="_blank">Github</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="https://www.linkedin.com/in/juliana-murakami/" target="_blank">Linkedin</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>SELOS DE SEGURANÇA:</h4>
+					<ul class="nav flex-column">	
+						<li class="nav-item">
+							<img class="selo-seguranca" src="imagens/site-seguro.png" alt="teste">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="barra-topo justify-content">
+		<div class="msg">
+			<p>Copyright © 2025. Todos os direitos reservados. Site desenvolvido por Juliana Murakami</p>
+		</div>
+	</div>
+</body>
+</html>

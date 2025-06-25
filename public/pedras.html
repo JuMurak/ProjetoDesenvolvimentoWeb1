@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cristais e pedras</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/cbb6d5c68b.js" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+
+	<script src="js/firebase-config.js"></script>
+</head>
+<body>
+
+	<div class="barra-topo justify-content">
+		<div class="msg">
+			<p>Olá, seja bem-vindo(a)!</p>
+		</div>
+	</div>	
+	<header class= "sticky-top">
+		<div class="topo shadow-sm" id="topo">
+			<div class="container">
+				<div class="row d-flex align-items-center justify-content-evenly">
+					<div class="col-1">
+						<a class="logo"	href="index.html">
+							<img src="imagens/logo2.png" alt="Logotipo">
+						</a>
+					</div>
+					<div class="col-11">
+						<nav class="navbar navbar-light d-sm-none d-flex align-items-center justify-content-evenly">
+							<div class="container-fluid">
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" >
+								<span class="navbar-toggler-icon"></span>
+								</button>
+							</div>
+						</nav>
+						<div class="d-none d-sm-block">
+							<nav class="nav d-flex align-items-center justify-content-evenly">
+								<a class="nav-link" href="index.html">HOME</a>
+								<a class="nav-link" href="sobre.html">SOBRE</a>
+								<a class="nav-link" href="pedras.html">PEDRAS</a>
+								<a class="nav-link" href="incensos.html">INCENSOS</a>
+								<a class="nav-link" href="baralhos.html">BARALHOS</a>
+								<a class="nav-link" href="contato.html">CONTATO</a>
+								<a class="btn btn-success rounded-pill" href="https://api.whatsapp.com/send?l=pt&phone=9999999999999" target="_blank" id="exceto"><i class="fab fa-whatsapp"></i></a>
+							</nav>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="collapse" id="menuMobile">
+						<nav class="nav flex-column d-flex align-items-center justify-content-evenly">
+							<a class="nav-link" href="index.html">HOME</a>
+							<a class="nav-link" href="sobre.html">SOBRE</a>
+							<a class="nav-link" href="pedras.html">PEDRAS</a>
+							<a class="nav-link" href="incensos.html">INCENSOS</a>
+							<a class="nav-link" href="baralhos.html">BARALHOS</a>
+							<a class="nav-link" href="contato.html">CONTATO</a>
+							<a class="btn btn-success rounded-pill" href="https://api.whatsapp.com/send?l=pt&phone=9999999999999" target="_blank" id="exceto"><i class="fab fa-whatsapp"></i></a>
+						</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="menu-baralhos" id="baralho">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 align-self-center">
+					<br>
+					<p class="h1">CRISTAIS E PEDRAS</p>
+					<p>Conheça o poder das pedras e cristais.</p>
+					<P>Temos a pedra ou cristal, ideal para sua necessidade.</P>
+				</div>				
+			</div>
+		</div>
+	</section>
+	<br>
+	<section id="foto-baralho">
+		<div class="container mt-3 mb-5">
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:101</b>
+						<img class="img-default" src="imagens/ametista.jpg" class="card-img-top" alt="ametista">
+						<img class="img-hover" src="imagens/ametista3.jpg" class="card-img-top" alt="ametista">
+						<div class="card-body">
+							<h5 class="card-title">Ametista</h5>
+							<hr>
+							<p class="card-text">O Cristal de Proteção, Espiritualidade e Cura. Ela é um dos cristais mais famosos e procurados por místicos e colecionadores de todo o mundo. A Ametista eleva nossa intuição, fortalece a mediunidade e ajuda a despertar nossos poderes  espirituais.</p>
+							<b class="card-text">R$1.480,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:102</b>
+						<img class="img-default" src="imagens/citrino.jpg" class="card-img-top" alt="citrino">
+						<img class="img-hover" src="imagens/citrino2.jpg" class="card-img-top" alt="citrino">
+						<div class="card-body">
+							<h5 class="card-title">Citrino</h5>
+							<hr>
+							<p class="card-text">Pedra do sucesso e da positividade. O Citrino é responsável por trazer sucesso para quem o usa, além de ser o cristal das energias sol. Sua força é tão intensa que é capaz de se auto carregar e carregar outros cristais, já que abastece suas propriedades diretamente dos raios solares.</p>
+							<b class="card-text">R$360,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:103</b>
+						<img class="img-default" src="imagens/drusa-cristal.jpg" class="card-img-top" alt="drusa de cristal">
+						<img class="img-hover" src="imagens/drusa-cristal2.jpg" class="card-img-top" alt="drusa de cristal">
+						<div class="card-body">
+							<h5 class="card-title">Drusa de cristal</h5>
+							<hr>
+							<p class="card-text">As drusas de cristal são excelentes para afastar as energias dissonantes provenientes de pessoas. Elas devem ser colocadas nos cantos das salas apontadas para o local onde há mais movimento de pessoas. Elas criam uma atmosfera tão positiva que as pessoas com energias dissonantes não suportam e se afastam.</p>
+							<b class="card-text">R$640,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:104</b>
+						<img class="img-default" src="imagens/jaspe-vermelho.jpg" class="card-img-top" alt="jaspe vermelho">
+						<img class="img-hover" src="imagens/jaspe-vermelho3.jpg" class="card-img-top" alt="jaspe vermelho">
+						<div class="card-body">
+							<h5 class="card-title">Jaspe vermelho</h5>
+							<hr>
+							<p class="card-text">A característica mais referida do Jaspe é a de proteger e nutrir, razão pela qual lhe é dado o nome de “pedra nutridora”, ela estimula a função sexual e é considerada uma pedra afrodisíaca. É uma pedra de enraizamento por excelência e também de estabilidade, conforto e segurança, aumentando a força física.</p>
+							<b class="card-text">R$70,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:105</b>
+						<img class="img-default" src="imagens/lapis-lazuli.jpg" class="card-img-top" alt="lapis lazuli">
+						<img class="img-hover" src="imagens/lapis-lazuli3.jpg" class="card-img-top" alt="lapis lazuli">
+						<div class="card-body">
+							<h5 class="card-title">Lápis lazúli</h5>
+							<hr>
+							<p class="card-text">O Lápis Lazúli possui uma elevadíssima força espiritual. Ele acelera a iluminação pessoal e desperta capacidades psíquicas. Sua vibração facilita o contato com nossos guardiões espirituais e bloqueia os ataques espirituais.</p>
+							<b class="card-text">R$880,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:106</b>
+						<img class="img-default" src="imagens/malaquita.jpg" class="card-img-top" alt="malaquita">
+						<img class="img-hover" src="imagens/malaquita3.jpg" class="card-img-top" alt="malaquita">
+						<div class="card-body">
+							<h5 class="card-title">Malaquita</h5></h5>
+							<hr>
+							<p class="card-text">A pedra da evolução espiritual, a Malaquita ativa a nossa intuição e facilita as energias e informações que chegam até nós. E o que isso significa? Que essas energias e informações nos ajudam a trilhar o caminho rumo à ascensão espiritual. A pedra também ajuda na expansão da consciência, atraindo luz para a nossa Aura e purificando o campo energético.</p>
+							<b class="card-text">R$120,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:107</b>
+						<img class="img-default" src="imagens/olho-tigre.jpg" class="card-img-top" alt="olho de tigre">
+						<img class="img-hover" src="imagens/olho-tigre2.jpg" class="card-img-top" alt="olho de tigre">
+						<div class="card-body">
+							<h5 class="card-title">Olho de tigre</h5>
+							<hr>
+							<p class="card-text">A Olho de Tigre promove força interior, alegria e decisões firmes. Por tradição, é utilizada como talismã contra maldições. Acredita-se que ela possua a capacidade de nos proteger contra energias negativas, além ajudar a alcançar metas, intensificar a intuição e as capacidades psíquicas. A pedra contribui para ordenação de nossos pensamentos e desejos, fortalecendo a auto valorização, a autoestima e a autoconfiança.</p>
+							<b class="card-text">R$770,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:108</b>
+						<img class="img-default" src="imagens/pirita.jpg" class="card-img-top" alt="pirita">
+						<img class="img-hover" src="imagens/pirita2.jpg" class="card-img-top" alt="pirita">
+						<div class="card-body">
+							<h5 class="card-title">Pirita</h5>
+							<hr>
+							<p class="card-text">A Pirita atrai a fartura, favorece o sucesso profissional, desata “nós” energéticos, abre os caminhos, protege as finanças, aumenta nossa autoconfiança e atua como um ímã para atrair coisas boas para sua vida. Esta pedra nos dá forças para vencermos os desafios, elimina pensamentos e sentimentos negativos e funciona como um escudo contra inveja, mal olhado e magia negra.</p>
+							<b class="card-text">R$820,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:109</b>
+						<img class="img-default" src="imagens/quartzo-rosa.jpg" class="card-img-top" alt="quartzo rosa">
+						<img class="img-hover" src="imagens/quartzo-rosa3.jpg" class="card-img-top" alt="quartzo rosa">
+						<div class="card-body">
+							<h5 class="card-title">Quartzo rosa</h5>
+							<hr>
+							<p class="card-text">Representando o amor incondicional, o Quartzo Rosa é o cristal mais importante para os nossos corações. Sua energia especial acalma as emoções e sentimentos, mas também desperta o amor pela vida, é conhecida por suas propriedades de cura emocional e amorosa. Ele é usado para ajudar a promover a auto-estima e o amor-próprio, além de ajudar a aliviar a dor emocional e o trauma. Também ajuda a promover a harmonia e a paz nos relacionamentos.</p>
+							<b class="card-text">R$610,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:110</b>
+						<img class="img-default" src="imagens/turmalina-negra.jpg" class="card-img-top" alt="turmalina negra">
+						<img class="img-hover" src="imagens/turmalina-negra3.jpg" class="card-img-top" alt="turmalina negra">
+						<div class="card-body">
+							<h5 class="card-title">Turmalina negra</h5>
+							<hr>
+							<p class="card-text">A Turmalina Negra é uma super pedra de proteção capaz de absorver e dissipar todas energia negativas. Sua vibração neutraliza até os ataques mais fortes de magia negra, inveja e vampirismo energético. Esta pedra também dispersa o estresse e a tensão e estimula uma atitude positiva em relação a vida, sendo assim útil nos casos depressão, ansiedade e nervosismo.</p>
+							<b class="card-text">R$550,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<footer class="rodape" id="contato">
+		<div class="container">			
+			<div class="row">
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>INSTITUCIONAL</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">							
+							<a class="nav-link" href="compra-envio.html">Compra e envio</a>
+							<a class="nav-link" href="politica-troca.html">Política de troca e devolução</a>
+							<a class="nav-link" href="contato.html">Fale conosco</a>
+							<a class="nav-link" href="trabalhe-conosco.html">Trabalhe conosco</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>ATENDIMENTO</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<b>Funcionamento:</b>
+							<p>De segunda a sexta das 9h às 18h e sábado das 9h às 13h.</p>
+							<b>Endereço:</b>
+							<p>Av. Carlos Kuntz Busch, 800 - Parque Egisto Ragazzo, Limeira - SP, 13485-346</p>
+							<b>Telefone:</b>							
+							<p>(99) 99999-9999</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>Redes Sociais</h4>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="https://github.com/JuMurak" target="_blank">Github</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.linkedin.com/in/juliana-murakami/" target="_blank">Linkedin</a>
+							</li>
+						</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>SELOS DE SEGURANÇA:</h4>
+					<ul class="nav flex-column">	
+						<li class="nav-item">
+							<img class="selo-seguranca" src="imagens/site-seguro.png" alt="teste">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="barra-topo justify-content">
+		<div class="msg">
+			<p>Copyright © 2025. Todos os direitos reservados. Site desenvolvido por Juliana Murakami</p>
+		</div>
+	</div>
+</body>
+</html>

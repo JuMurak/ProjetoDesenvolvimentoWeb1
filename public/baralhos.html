@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarot e Oráculo</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/cbb6d5c68b.js" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+
+	<script src="js/firebase-config.js"></script>
+</head>
+<body>
+	<div class="barra-topo justify-content">
+		<div class="msg">
+			<p>Olá, seja bem-vindo(a)!</p>
+		</div>
+	</div>	
+	<header class= "sticky-top">
+		<div class="topo shadow-sm" id="topo">
+			<div class="container">
+				<div class="row d-flex align-items-center justify-content-evenly">
+					<div class="col-1">
+						<a class="logo"	href="index.html">
+							<img src="imagens/logo2.png" alt="Logotipo">
+						</a>
+					</div>
+					<div class="col-11">
+						<nav class="navbar navbar-light d-sm-none d-flex align-items-center justify-content-evenly">
+							<div class="container-fluid">
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" >
+								<span class="navbar-toggler-icon"></span>
+								</button>
+							</div>
+						</nav>
+						<div class="d-none d-sm-block">
+							<nav class="nav d-flex align-items-center justify-content-evenly">
+								<a class="nav-link" href="index.html">HOME</a>
+								<a class="nav-link" href="sobre.html">SOBRE</a>
+								<a class="nav-link" href="pedras.html">PEDRAS</a>
+								<a class="nav-link" href="incensos.html">INCENSOS</a>
+								<a class="nav-link" href="baralhos.html">BARALHOS</a>
+								<a class="nav-link" href="contato.html">CONTATO</a>
+								<a class="btn btn-success rounded-pill" href="https://api.whatsapp.com/send?l=pt&phone=9999999999999" target="_blank" id="exceto"><i class="fab fa-whatsapp"></i></a>
+							</nav>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="collapse" id="menuMobile">
+						<nav class="nav flex-column d-flex align-items-center justify-content-evenly">
+							<a class="nav-link" href="index.html">HOME</a>
+							<a class="nav-link" href="sobre.html">SOBRE</a>
+							<a class="nav-link" href="pedras.html">PEDRAS</a>
+							<a class="nav-link" href="incensos.html">INCENSOS</a>
+							<a class="nav-link" href="baralhos.html">BARALHOS</a>
+							<a class="nav-link" href="contato.html">CONTATO</a>
+							<a class="btn btn-success rounded-pill" href="https://api.whatsapp.com/send?l=pt&phone=9999999999999" target="_blank" id="exceto"><i class="fab fa-whatsapp"></i></a>
+						</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="menu-baralhos" id="baralho">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 align-self-center">
+					<br>
+					<p class="h1">TAROT E ORÁCULO</p>
+					<p>Baralhos selecionados, com manuais explicativos para ajudar nos seus estudos e próximas tiragens.</p>
+				</div>				
+			</div>
+		</div>
+	</section>
+	<section id="foto-baralho">
+		<div class="container mt-3 mb-5">
+			<div class="row">				
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:301</b>
+						<img class="img-default" src="imagens/baralho-cigano.jpg" class="card-img-top" alt="baralho cigano">
+						<img class="img-hover" src="imagens/baralho-cigano3.jpg" class="card-img-top" alt="baralho cigano">
+						<div class="card-body">
+							<h5 class="card-title">Baralho Cigano: Tradição, Teoria e Prática</h5>
+							<p class="card-text">Esta é uma edição especial de luxo do best-seller de André Mantovanni, Baralho Cigano: Tradição, Teoria e Prática é mais que um manual sobre as cartas ciganas da escola brasileira ele é um convite à reflexão sobre nossas questões cotidianas e ao desvelamento dos mistérios da alma, para a plenitude de conquistas e realizações.</p>
+							<p class="card-text">INFORMAÇÕES DO PRODUTO: Editora Pensamento, livro capa dura + 36 cartas + caixa rígida, idioma: português, capa comum: 224 páginas, dimensões: 17 x 3.2 x 24 cm.</p>
+							<b class="card-text">R$150,00</b>
+							<br>
+							<br>
+							<a href="#" class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:302</b>
+						<img class="img-default" src="imagens/tarot-anjos.jpg" class="card-img-top" alt="Tarot dos anjos">
+						<img class="img-hover" src="imagens/tarot-anjos2.jpg" class="card-img-top" alt="Tarot dos anjos">
+						<div class="card-body">
+							<h5 class="card-title">Tarot dos Anjos</h5>
+							<p class="card-text">Nesta obra, André Mantovanni, combina toda a força espiritual do mundo angélico com o simbolismo dos arcanos maiores do tarô. A caixa contempla um livro em capa dura e ricamente ilustrado e colorido, e um conjunto de 22 cartas ilustradas e confeccionadas em alta gramatura.</p>
+							<p class="card-text">INFORMAÇÕES DO PRODUTO: Editora Pensamento, caixa rígida + livro capa dura + 22 cartas, idioma: português, capa dura: 184 páginas, dimensões: 17 x 3.2 x 24 cm.</p>
+							<b class="card-text">R$120,00</b>
+							<br>
+							<br>
+							<a href="#" class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:303</b>
+						<img class="img-default" src="imagens/tarot-waite1.jpg" class="card-img-top" alt="tarot de waite">
+						<img class="img-hover" src="imagens/tarot-waite-2.jpg" class="card-img-top" alt="tarot de waite">
+						<div class="card-body">
+							<h5 class="card-title">Tarot Rider Waite Dourado Luxuoso</h5>
+							<p class="card-text">A mais bela versão do tarô de Rider Waite agora com laminas plastificadas impermeáveis e com um brilho de ouro cintilante jamais visto.</p>
+							<p>INFORMAÇÕES DO PRODUTO: deck com 78 cartas, plastificado, cartas impermeáveis, com super brilho, idioma: inglês, autor: A.E. Waite, tamanho das cartas: 12 x 7 cm, acompanha livreto explicativo em inglês.</p>
+							<b class="card-text">R$190,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html"  class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">				
+				<div class="col-12 col-sm-4">
+					<div class="card" >
+						<b class="card-header">Ref.:304</b>
+						<img class="img-default" src="imagens/orcaulo-inte.jpg" class="card-img-top" alt="oraculo">
+						<img class="img-hover" src="imagens/oraculo-inte2.jpg" class="card-img-top" alt="oraculo">
+						<div class="card-body">
+							<h5 class="card-title">Oráculo das Intenções</h5>
+							<p class="card-text">Oráculo com 45 cartas. Inclui livreto com instruções em Português. O Oráculo das Intenções apresenta através de suas cartas, uma profunda reflexão sobre as nossas jornadas. Ele é dividido em conselhos trazidos pelos cinco elementos: Terra, Água, Fogo, Ar e Éter. Todas as mensagens e ilustrações trazem uma energia presente na natureza.</p>
+							<p>INFORMAÇÕES DO PRODUTO: Editora Caldeirão Místico, idioma: português, acabamento especial: 44 páginas, dimensões: 12 x 9 x 2 cm.</p>
+							<b class="card-text">R$110,00</b>
+							<br>
+							<br>
+							<a href="compra-envio.html" class="btn btn-success">Eu quero</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>
+	<footer class="rodape" id="contato">
+		<div class="container">			
+			<div class="row">
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>INSTITUCIONAL</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">							
+							<a class="nav-link" href="compra-envio.html">Compra e envio</a>
+							<a class="nav-link" href="politica-troca.html">Política de troca e devolução</a>
+							<a class="nav-link" href="contato.html">Fale conosco</a>
+							<a class="nav-link" href="trabalhe-conosco.html">Trabalhe conosco</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>ATENDIMENTO</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<b>Funcionamento:</b>
+							<p>De segunda a sexta das 9h às 18h e sábado das 9h às 13h.</p>
+							<b>Endereço:</b>
+							<p>Av. Carlos Kuntz Busch, 800 - Parque Egisto Ragazzo, Limeira - SP, 13485-346</p>
+							<b>Telefone:</b>							
+							<p>(99) 99999-9999</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>Redes Sociais</h4>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="https://github.com/JuMurak" target="_blank">Github</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.linkedin.com/in/juliana-murakami/" target="_blank">Linkedin</a>
+							</li>
+						</ul>
+				</div>
+				<div class="col-12 col-sm-3 mt-5 mb-5">
+					<h4>SELOS DE SEGURANÇA:</h4>
+					<ul class="nav flex-column">	
+						<li class="nav-item">
+							<img class="selo-seguranca" src="imagens/site-seguro.png" alt="teste">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="barra-topo justify-content">
+		<div class="msg">
+			<p>Copyright © 2025. Todos os direitos reservados. Site desenvolvido por Juliana Murakami</p>
+		</div>
+	</div>
+</body>
+</html>
